@@ -1,6 +1,5 @@
 module.exports = function toReadable (number) {
 
-console.log(number);
 
     var ones = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
     var tens = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
@@ -40,7 +39,6 @@ console.log(number);
     
       if (number == 0) return "zero";
       else {
-        console.log(convert_millions(number));
-        return convert_millions(number);
+        return (convert_millions(number).trim());
       }
 }
